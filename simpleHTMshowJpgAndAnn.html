@@ -1,0 +1,59 @@
+<html>
+
+<body>
+  <input type="radio" id="r1" name="W" checked="true" onclick="changeImg()">W/L 300/1000 <br>
+  <input type="radio" id="r2" name="W" onclick="changeImg()">W/L 600/1000 <br>
+  <input type="radio" id="r3" name="W" onclick="changeImg()">W/L 1200/1000 <br>
+
+  <div style="position: relative;">
+    <img id="img1" src="https://famishop.fami.life/famishopplus-pic/sites/a/l/659160/conversions/Kxwc8jidRl-normal.jpg"
+      width="640" height="640" style="position: absolute;  left: 0px; top:0px; z-index: 1;" />
+
+    <svg width="200" height="200" style="position: absolute;  left: 40px; top:195px; z-index: 2;">
+      <ellipse cx="100" cy="50" rx="80" ry="30" style="fill:none; stroke:rgb(225, 188, 102); stroke-width:2" />
+    </svg>
+
+    <svg width="200" height="200" style="position: absolute;  left: 190px; top:180px; z-index: 2;">
+      <rect x="50" y="50" width="50" height="50" fill="aquamarine" stroke-width="2"/>
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 30 30" to="360 30 30"
+          dur="5s" repeatCount="indefinite" />
+    </svg>
+ 
+    <svg width="300" height="300" style="position: absolute;  left: 200px; top:200px; z-index: 2;">
+      <line x1="0" y1="0" x2="200" y2="200" stroke="red" stroke-width="2" />
+    </svg>
+
+    <svg width="200" height="200" style="position: absolute;  left: 40px; top:150px; z-index: 2;">
+      <text x="50%" y="50%" text-anchor="middle" font-size="20" fill="white">110316108</text>
+    </svg>
+  </div>
+</body>
+
+<script type="text/javascript">
+
+  function changeImg() {
+    //  jpgDir/300-1000.PNG" 
+
+    //  alert("aaa");
+    if (document.getElementById("r1").checked == true) {
+      //document.getElementById("img1").src = "https://www.ali-nsa.net/content/images/static/ali-img-2-md.jpg"
+      document.getElementById("img1").width = "640";
+      document.getElementById("img1").height = "640";
+    }
+
+    if (document.getElementById("r2").checked == true) {
+      //document.getElementById("img1").src = "https://www.ali-nsa.net/content/images/static/ali-img-2-md.jpg"
+      document.getElementById("img1").width = "840";
+      document.getElementById("img1").height = "840";
+    }
+
+    if (document.getElementById("r3").checked == true) {
+      //document.getElementById("img1").src = "https://www.ali-nsa.net/content/images/static/ali-img-2-md.jpg"
+      document.getElementById("img1").width = "1040";
+      document.getElementById("img1").height = "1040";
+    }
+  }
+
+</script>
+
+</html>
